@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tech Geniuses UK | Web Design Agency</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080e1c;
+    color: white;
+}
+
+header {
+    background: #101a30;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #168cff;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #168cff;
+}
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background: radial-gradient(circle, #17345d, #080e1c 70%);
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+.hero span {
+    color: #168cff;
+}
+
+.hero p {
+    color: #b6c5dc;
+    font-size: 19px;
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 16px 32px;
+    background: #168cff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #0065cc;
+    transform: translateY(-4px);
+}
+
+section {
+    padding: 85px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #9eacc2;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #111e35;
+    border: 1px solid #203454;
+    padding: 35px;
+    border-radius: 12px;
+    width: 280px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #168cff;
+}
+
+.card h3 {
+    color: #168cff;
+    margin-bottom: 18px;
+}
+
+.card p {
+    color: #b6c5dc;
+    line-height: 1.7;
+}
+
+.price {
+    font-size: 30px;
+    color: #168cff;
+    margin: 20px 0;
+}
+
+.contact {
+    background: #101a30;
+}
+
+.contact p {
+    color: #b6c5dc;
+    margin: 15px;
+    font-size: 17px;
+}
+
+.contact a.phone {
+    color: #168cff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.contact a.phone:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #060b15;
+    padding: 30px;
+    text-align: center;
+    color: #7889a5;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 6px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">TECH GENIUSES UK</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+
+    <h1>Building Your <span>Digital Future.</span></h1>
+
+    <p>
+        Professional website design and development
+        helping businesses across the UK grow online.
+    </p>
+
+    <a href="#contact" class="button">Get Started</a>
+
+</div>
+
+<section id="services">
+
+    <h2 class="section-title">Our Services</h2>
+
+    <p class="subtitle">
+        Everything your business needs online.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Website Design</h3>
+            <p>Modern, professional websites designed around your business.</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Custom-built websites with modern features and functionality.</p>
+        </div>
+
+        <div class="card">
+            <h3>Website Maintenance</h3>
+            <p>Website updates, improvements and ongoing support.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="pricing">
+
+    <h2 class="section-title">Our Pricing</h2>
+
+    <p class="subtitle">
+        Packages designed for different business needs.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Starter</h3>
+            <div class="price">Contact Us</div>
+            <p>Simple business websites.</p>
+        </div>
+
+        <div class="card">
+            <h3>Professional</h3>
+            <div class="price">Contact Us</div>
+            <p>Multi-section professional websites.</p>
+        </div>
+
+        <div class="card">
+            <h3>Premium</h3>
+            <div class="price">Contact Us</div>
+            <p>Custom websites with advanced features.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="portfolio">
+
+    <h2 class="section-title">Our Portfolio</h2>
+
+    <p class="subtitle">
+        Our website projects will be showcased here.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Coming Soon</h3>
+            <p>Our first website projects are on their way.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2 class="section-title">Let's Work Together.</h2>
+
+    <p>Have a website project in mind?</p>
+
+    <p>Give us a call:</p>
+
+    <a class="phone" href="tel:+447934242815">
+        07934 242815
+    </a>
+
+    <br>
+
+    <a href="tel:+447934242815" class="button">
+        Call Us Now
+    </a>
+
+</section>
+
+<footer>
+    © 2026 Tech Geniuses UK. All rights reserved.
+</footer>
+
+</body>
+</html>
